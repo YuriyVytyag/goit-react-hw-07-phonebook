@@ -11,9 +11,7 @@ import { useEffect } from 'react';
 export function App() {
   const dispatch = useDispatch();
   const filter = useSelector(getContactsFilter);
-  console.log('🚀 ~ filter', filter);
   const contacts = useSelector(getContacts);
-  console.log('🚀 ~ contacts', contacts);
 
   useEffect(() => {
     dispatch(fetchContacts());
